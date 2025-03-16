@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #e0f7fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+header {
+  display: flex;
+  background-color: cadetblue;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  padding: 15px;
+  margin-left: 0px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  list-style-type: none;
+}
+nav ul li {
+  margin: 0 20px;
+  position: relative;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+nav ul li a:hover {
+  background-color: #004d40;
+}
+.image {
+  width: 35%;
+  height: 300px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 30px;
+}
+#firstDiv {
+  margin-left: 100px;
+  display: block;
+}
+#secondDiv {
+  margin-left: 50px;
+  display: block;
+  clear: left;
+  margin-top: 20px;
+}
+#address {
+  font-family: serif;
+}
+.name,
+.department {
+  text-align: center;
+  color: #333;
+}
+h1 {
+  margin-right: 100px;
+}
+ol > li {
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+h2 {
+  margin-top: 0;
+}
+ul {
+  padding-left: 20px;
+}
+ul li {
+  margin-bottom: 10px;
+}
+footer {
+  background-color: darkolivegreen;
+  margin-top: 10px;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+#button {
+  text-decoration: none;
+}
+th {
+  text-transform: uppercase;
+}
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+table td {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+tr {
+  margin-bottom: 5px;
+  border-color: black;
+}
