@@ -4,7 +4,9 @@ function Validate() {
   if (name === "") {
     alert("Name is required.");
   }
-
+  if(!/^[a-zA-Z ]+$/.test(name)){
+    alert("Your name should contain only alphabet letters!");
+  }
   var genderMaleField = document.getElementById("male");
   var genderFemaleField = document.getElementById("female");
   var genderMale = genderMaleField.checked;
