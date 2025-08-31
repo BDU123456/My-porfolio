@@ -1,54 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
 <head>
-    <link rel="icon" type="png" href="C:\Users\Admin\OneDrive\Desktop\coll.program\download.png">
-    <link rel="stylesheet" href="Styles.css">
-    <script type="text/javascript" src="Validate.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Biruk Taye</title>
+  <meta name="description" content="Contact form to reach Biruk Taye." />
+  <link rel="icon" href="docx.jpg" type="image/jpeg" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul class="Navigation Bar">
-        <li class="navigation"><a href="Home.html">Home</a></li>
+  <a class="sr-only" href="#main">Skip to content</a>
 
-        <li class="navigation"><a href="About me.html">About me</a></li>
+  <header class="site-header">
+    <div class="container inner">
+      <div class="logo">Biruk Taye</div>
+      <nav aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="course.html">Courses</a></li>
+          <li><a class="nav__link" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <li class="navigation"><a href="Course.html">Course</a></li>
-
-        <li class="navigation"><a href="Contact.html">Contact</a>
-      </ul>
-    </nav>
-</header>
+  <main id="main" class="section">
+    <div class="container">
       <h1>Contact Me</h1>
-    <form action="submit_form.php" method="post">
-        <label for="name">Name:</label> 
-        <input type="text" id="name" name="name" ><br><br>
+      <form id="contact-form" novalidate>
+        <div class="form-row">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required minlength="2" />
+            <div class="field-error" id="error-name" aria-live="polite"></div>
+          </div>
+          <div>
+            <label for="birthdate">Birthdate</label>
+            <input type="date" id="birthdate" name="birthdate" required />
+            <div class="field-error" id="error-birthdate" aria-live="polite"></div>
+          </div>
+        </div>
 
-        <label>Sex:</label>
-        <input type="radio" id="male" name="gender" >
-        <label>Male</label>
-        <input type="radio" id="female" name="gender" >
-        <label>Female</label><br><br>
-       
-        <label for="birthdate">Birthdate:</label>
-        <input type="date" id="birthdate" name="birthdate" ><Br><br>
+        <fieldset class="card">
+          <legend>Gender</legend>
+          <div class="radio-group">
+            <div>
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="male">Male</label>
+            </div>
+            <div>
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">Female</label>
+            </div>
+          </div>
+          <div class="field-error" id="error-gender" aria-live="polite"></div>
+        </fieldset>
 
-        <label for="phone_no">Phone Number:</label>
-        <input type="tel" id="phone_no" name="phone_no" placeholder="+251---------"><br><br>
+        <div class="form-row">
+          <div>
+            <label for="phone_no">Phone Number</label>
+            <input type="tel" id="phone_no" name="phone_no" placeholder="+2519XXXXXXXX" required pattern="^\+2519\d{8}$" />
+            <div class="field-error" id="error-phone" aria-live="polite"></div>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            <div class="field-error" id="error-email" aria-live="polite"></div>
+          </div>
+        </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" ><br><br>
+        <div>
+          <label for="pwd">Password</label>
+          <input type="password" id="pwd" name="password" required minlength="6" />
+          <div class="field-error" id="error-password" aria-live="polite"></div>
+        </div>
 
-        <label for="pwd">Password:</label>
-        <input type="password" id="pwd" name="password"  ><br><br>
+        <div>
+          <label for="message">Message <small>(optional)</small></label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+        </div>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" placeholder="This is Optional" ></textarea><br><br>
+        <div class="stack">
+          <button type="submit" class="button">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
 
-        <button type="submit" onclick="Validate()">Submit</button>
-        <button type="reset">Reset</button>
-    </form>
-    <footer>
-      <p>&copy; 2025 Biruk Taye. All Rights Reserved</p>
+      <div id="form-success" class="card" style="display:none; margin-top: 16px;">
+        <h2>Thank you!</h2>
+        <p>Your submission has been received.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container inner">
+      <small>&copy; 2025 Biruk Taye. All Rights Reserved</small>
+    </div>
   </footer>
 </body>
 </html>
