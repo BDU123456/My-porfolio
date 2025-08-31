@@ -1,186 +1,208 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
 <head>
-    <link rel="icon" type="png" href="C:\Users\Admin\OneDrive\Desktop\coll.program\download.png">
-    <link rel="stylesheet" href="Styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Courses — Biruk Taye</title>
+  <meta name="description" content="Courses and current semester class schedule for Biruk Taye, Information Systems student." />
+  <link rel="icon" href="docx.jpg" type="image/jpeg" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-          <ul class="Navigation Bar">
-            <li class="navigation"><a href="Home.html">Home</a></li>
-  
-            <li class="navigation"><a href="About me.html">About me</a></li>
+  <a class="sr-only" href="#main">Skip to content</a>
 
-            <li class="navigation"><a href="Course.html">Course</a></li>
+  <header class="site-header">
+    <div class="container inner">
+      <div class="logo">Biruk Taye</div>
+      <nav aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="course.html" aria-current="page">Courses</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <li class="navigation"><a href="Contact.html">Contact</a>
-          </ul>
-        </nav>
-    </header>
-      <h1>My Courses</h1><br>
-    <h2>Department of Information System</h2><br>
-    <p>
-        I am part of the Information System department at Bahir Dar University.<br> 
-        Our department is dedicated to providing a solid foundation in Information System principles and preparing students for successful careers in the tech industry.
-    </p><br>
-    <p>
-        If you want to see the courses that i have taken found at
-    <button> 
-        <a href="Course.pdf" text-decoration="none"> The previouse course</a>
-    </button>
-</p>
-    <h2 class="schedule">Current Semester Class Schedule</h2><br>
-    <table border="1">
-        <tr>
-            <th rowspan="2">Time</th>
-            <th colspan="5">IS 3<sup>rd</sup></th>
-        </tr>
-        <tr>
-            <th>Monday</th>
-            <th>Thusday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th> 
-        </tr>
-        <tr>
-            <td>02:00 - 02:50 <br>
-               <hr> 02:55-03:45</td>
-            <td>
-                Operating System <br>
-                 Lab <br>
-                Audiovisual Lab
-            </td>
+  <main id="main" class="section">
+    <div class="container stack">
+      <header class="stack">
+        <h1>My Courses</h1>
+        <p class="muted">Department of Information Systems</p>
+        <div>
+          <a class="btn" href="Course.pdf" target="_blank" rel="noopener">Previous courses (PDF)</a>
+        </div>
+      </header>
+
+      <section class="card">
+        <h2 class="schedule">Current Semester Class Schedule</h2>
+        <div class="stack">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col" rowspan="2">Time</th>
+                <th scope="col" colspan="5">IS 3<sup>rd</sup></th>
+              </tr>
+              <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
                 <td>
-                    Data Structure <br>
-                    and Algorithms <br>
-                    AddisuZ <br>
-                    GLR-307
+                  02:00 - 02:50
+                  <hr>02:55 - 03:45
                 </td>
-                 <td>
-                    Operating System <br>
-                    Lec <br>
-                    Kasanesh M <br>
-                   GLR-307</td>
-                 </td>
-                 <td>
-                    Internet Programming <br>
-                    Lec <br>
-                    Mahlet <br>
-                    GLR-307
-                 </td>
-                 <td>
-                    Internet Programming <br>
-                    Lab <br>
-                    G2 <br>
-                    computing lab
-                 </td>          
-        </tr>
-        <tr>
-            <td>03:50 - 04:30 <br>
-               <hr> 04:35 - 05:25 <br>
-               <hr> 05:30 - 06:20</td>
-               <td>
-                Operating System <br>
-                Lab <br>
-               Audiovisual Lab
-               </td>
-               <td>
-                   Event Driven Programming <br>
-                   Lec <br>
-                   Abebayehu T <br>
-                   GLR-307
-               </td>
-               <td>
-                   Introduction to Arteficial Intelligence <br>
-                   Lec <br>
-                   Alemu <br>
-                   GLR-307
-               </td>
-               <td>
-                Advanced Database System <br>
-                Lec <br>
-               Asnakew <br>
-               GLR-307
-               </td>
-               <td>
-                Internet Programming <br>
-                Lab <br>
-               Computing Lab
-               </td>
-        </tr>
-        <tr>
-            <td>06:30 - 07:30</td>
-        </tr>
-        <tr>
-            <td>07:35 - 08:25 <br>
-              <hr>  08:30 - 09:20</td>
-            <td>
-                Research Methods in Information System <br>
-                Lec <br>
-                Muluken B <br>
-                GLR-307
-            </td>
-            <td>
-                Event Driven Programming <br>
-                Lab <br>
-                G1 <br>
-               Computing lab
-            </td>
-            <td>
-                Introduction to Arteficial Inteligence<br>
-                Lab <br>
-                G1 <br>
-               Audiovisual Lab
-            </td>
-            <td>
-                Data Structure 
-                and Algorithms <br>
-                Lab <br>
-                G1<br>
-            </td>
-            <td>
-                Advanced Database System <br>
-                Lab <br>
-                G2 <br>
-                Database Lab
-            </td>
-        </tr>
-        <tr>
-            <td>09:25 - 10:15 <br>
-              <hr>  10:20 - 11:10 <br>
-              <hr>  11:15 - 12:00</td>
-            <td>
-               
-            </td>
-            <td>
-                Event Driven Programming <br>
-                Lab <br>
-                G1 <br>
-               Computing lab
-            </td>
-            <td>
-                Introduction to Arteficial Inteligence<br>
-                Lab <br>
-                G1 <br>
-               Audiovisual Lab
-            </td>
-            <td>
-                Data Structure 
-                and Algorithms <br>
-                Lab <br>
-                G1<br>
-            </td>
-            <td>
-                Advanced Database System <br>
-                Lab <br>
-                G2 <br>
-                Database Lab
-            </td>
-        </tr>
+                <td>
+                  Operating System<br>
+                  Lab<br>
+                  Audiovisual Lab
+                </td>
+                <td>
+                  Data Structures and Algorithms<br>
+                  Addisu Z<br>
+                  GLR-307
+                </td>
+                <td>
+                  Operating System<br>
+                  Lecture<br>
+                  Kasanesh M<br>
+                  GLR-307
+                </td>
+                <td>
+                  Internet Programming<br>
+                  Lecture<br>
+                  Mahlet<br>
+                  GLR-307
+                </td>
+                <td>
+                  Internet Programming<br>
+                  Lab<br>
+                  G2<br>
+                  Computing Lab
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  03:50 - 04:30
+                  <hr>04:35 - 05:25
+                  <hr>05:30 - 06:20
+                </td>
+                <td>
+                  Operating System<br>
+                  Lab<br>
+                  Audiovisual Lab
+                </td>
+                <td>
+                  Event-Driven Programming<br>
+                  Lecture<br>
+                  Abebayehu T<br>
+                  GLR-307
+                </td>
+                <td>
+                  Introduction to Artificial Intelligence<br>
+                  Lecture<br>
+                  Alemu<br>
+                  GLR-307
+                </td>
+                <td>
+                  Advanced Database Systems<br>
+                  Lecture<br>
+                  Asnakew<br>
+                  GLR-307
+                </td>
+                <td>
+                  Internet Programming<br>
+                  Lab<br>
+                  Computing Lab
+                </td>
+              </tr>
+              <tr>
+                <td>06:30 - 07:30</td>
+                <td colspan="5"></td>
+              </tr>
+              <tr>
+                <td>
+                  07:35 - 08:25
+                  <hr>08:30 - 09:20
+                </td>
+                <td>
+                  Research Methods in Information Systems<br>
+                  Lecture<br>
+                  Muluken B<br>
+                  GLR-307
+                </td>
+                <td>
+                  Event-Driven Programming<br>
+                  Lab<br>
+                  G1<br>
+                  Computing Lab
+                </td>
+                <td>
+                  Introduction to Artificial Intelligence<br>
+                  Lab<br>
+                  G1<br>
+                  Audiovisual Lab
+                </td>
+                <td>
+                  Data Structures and Algorithms<br>
+                  Lab<br>
+                  G1
+                </td>
+                <td>
+                  Advanced Database Systems<br>
+                  Lab<br>
+                  G2<br>
+                  Database Lab
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  09:25 - 10:15
+                  <hr>10:20 - 11:10
+                  <hr>11:15 - 12:00
+                </td>
+                <td></td>
+                <td>
+                  Event-Driven Programming<br>
+                  Lab<br>
+                  G1<br>
+                  Computing Lab
+                </td>
+                <td>
+                  Introduction to Artificial Intelligence<br>
+                  Lab<br>
+                  G1<br>
+                  Audiovisual Lab
+                </td>
+                <td>
+                  Data Structures and Algorithms<br>
+                  Lab<br>
+                  G1
+                </td>
+                <td>
+                  Advanced Database Systems<br>
+                  Lab<br>
+                  G2<br>
+                  Database Lab
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
 
-    </table>
-    <footer>
-        <p>&copy; 2025 Biruk Taye</p>
-    </footer>
+  <footer class="site-footer">
+    <div class="container inner">
+      <small>&copy; 2025 Biruk Taye</small>
+    </div>
+  </footer>
 </body>
 </html>
