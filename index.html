@@ -1,53 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>My page</title>
-    <link rel="icon" type="png" href="C:\Users\Admin\OneDrive\Desktop\coll.program\download.png">
-    <link rel="stylesheet" href="Styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Biruk Taye — Portfolio</title>
+  <meta name="description" content="Portfolio of Biruk Taye, an Information Systems student at Bahir Dar University. Passionate about coding, technology, and continuous learning." />
+  <link rel="icon" href="docx.jpg" type="image/jpeg" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-        <nav>
-          <ul class="Navigation Bar">
-            <li class="navigation"><a href="Home.html">Home</a></li>
-  
-            <li class="navigation"><a href="About me.html">About me</a></li>
+  <a class="sr-only" href="#main">Skip to content</a>
 
-            <li class="navigation"><a href="Course.html">Course</a></li>
+  <header class="site-header">
+    <div class="container inner">
+      <div class="logo">Biruk Taye</div>
+      <nav aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html" aria-current="page">Home</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="course.html">Courses</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <li class="navigation"><a href="Contact.html">Contact</a>
-          </ul>
-        </nav>
-    </header>  
-      <div id="firstDiv">
-    <img src="./docx.jpg" alt=" My Fovorite Picture" class="image">
-    <h1 class="name">Welcome To My page</h1><br>
-    <p id="paragraph1">
-        My name is Biruk Taye. I'm currently a student at Bahir Dar University. 
-        I'm passionate about coding, technology, and learning new things. 
-        In my leisure time, I enjoy reading, playing sports, and exploring new hobbies. 
-        <br><br>
-        I believe in continuous self-improvement and always strive to stay updated with the latest trends in technology. 
-        My journey in coding started in high school, and since then, I've been captivated by the endless possibilities it offers. 
-        Aside from academics, playing soccer and basketball keeps me active, while delving into different genres of books broadens my perspective on various topics. 
-    </p>
-   </div>    
-   <div id="secondDiv">
-    <h2 class="department">About the Department</h2>
-    <p id="paragraph2">
-        I am part of the Information System department at Bahir Dar University. 
-        Our department is dedicated to providing a solid foundation in information system principles and preparing students for successful careers in the tech industry. 
-        <br><br>
-        We focus on equipping students with both theoretical knowledge and practical skills. 
-        Our curriculum includes a mix of courses in database management, systems analysis, web development, and cybersecurity, among others. 
-        The department also encourages participation in internships and industry projects to gain real-world experience.
-    </p>
-    <p>
-        For more information about our university,<a href="http://www.bdu.edu.et/"> visit my university</a>.
-    </p>
-</div>
+  <main id="main">
+    <section class="section">
+      <div class="container hero">
+        <img src="./docx.jpg" alt="Portrait of Biruk Taye" class="avatar" />
+        <div class="hero__content">
+          <h1>Welcome to my portfolio</h1>
+          <p class="tag">Information Systems student • Bahir Dar University</p>
+          <div class="prose">
+            <p>My name is Biruk Taye. I'm currently a student at Bahir Dar University. I'm passionate about coding, technology, and learning new things.</p>
+            <p>In my leisure time, I enjoy reading, playing sports, and exploring new hobbies. I believe in continuous self-improvement and always strive to stay updated with the latest trends in technology. My journey in coding started in high school, and since then, I've been captivated by the endless possibilities it offers.</p>
+            <p>Aside from academics, playing soccer and basketball keeps me active, while delving into different genres of books broadens my perspective on various topics.</p>
+          </div>
+          <div class="stack">
+            <a class="btn btn--primary" href="contact.html">Get in touch</a>
+            <a class="btn" href="course.html">View my courses</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Biruk Taye</p>
-    </footer>
+    <section class="section section--alt">
+      <div class="container card">
+        <h2>About the Department</h2>
+        <div class="prose">
+          <p>I am part of the Information Systems department at Bahir Dar University. Our department is dedicated to providing a solid foundation in information systems principles and preparing students for successful careers in the tech industry.</p>
+          <p>We focus on equipping students with both theoretical knowledge and practical skills. Our curriculum includes a mix of courses in database management, systems analysis, web development, and cybersecurity, among others. The department also encourages participation in internships and industry projects to gain real-world experience.</p>
+          <p>For more information about our university, <a href="http://www.bdu.edu.et/" target="_blank" rel="noopener">visit Bahir Dar University</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container inner">
+      <small>&copy; 2025 Biruk Taye</small>
+    </div>
+  </footer>
 </body>
 </html>
